@@ -295,10 +295,14 @@ export default function Home() {
             />
             <div className="flex flex-col justify-center">
               <p className="font-bold text-stone-800 leading-tight mb-1">Домашні уги NOME</p>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 mb-1">
                 <span className="text-amber-600 font-black text-xl">850 ₴</span>
                 <span className="text-stone-400 line-through text-sm">1200 ₴</span>
               </div>
+              <p className="text-xs font-medium text-stone-500 flex items-center gap-1.5 mt-1">
+                <span className="flex"><span className="w-3 h-3 rounded-full bg-[#8b5a2b] border border-stone-200 block"></span><span className="w-3 h-3 rounded-full bg-black border border-stone-200 block -ml-1"></span></span>
+                В наявності коричневі та чорні
+              </p>
             </div>
           </div>
 
