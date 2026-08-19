@@ -5,6 +5,24 @@ import { useState, useEffect } from 'react'
 import { createOrder } from './actions'
 import { ShoppingBag, Star, Check, Phone, Truck, ShieldCheck, ChevronLeft, ChevronRight } from 'lucide-react'
 
+const TelegramIcon = ({ className = "w-4 h-4" }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.223-.548.223l.188-2.85 5.18-4.686c.223-.195-.054-.298-.346-.11l-6.4 4.032-2.75-.86c-.596-.188-.61-.595.124-.88l10.74-4.14c.498-.184.935.116.782.88z"/>
+  </svg>
+)
+
+const WhatsAppIcon = ({ className = "w-4 h-4" }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.2-.2.3-.7.8-.8 1-.2.2-.4.2-.6.1-.2-.1-1.1-.4-2-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4.1-.1.2-.2.3-.3.1-.1.2-.2.2-.4 0-.1 0-.3-.1-.4-.1-.2-.6-1.5-.8-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.3 2.1 3.2 5.1 4.5 2.1.9 2.9 1 3.9.9.9-.1 2.7-1.1 3.1-2.2.4-1.1.4-2 .3-2.2-.2-.3-.5-.4-.7-.5zM12 20.3v.1c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3c-.9-1.4-1.3-3-1.3-4.7 0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7zM12 1.6C6.2 1.6 1.5 6.3 1.5 12c0 1.9.5 3.7 1.5 5.2l-1.5 5.3 5.5-1.4c1.5.9 3.2 1.4 5 1.4 5.8 0 10.5-4.7 10.5-10.5S17.8 1.6 12 1.6z"/>
+  </svg>
+)
+
+const ViberIcon = ({ className = "w-4 h-4" }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M21.571 2.43H2.43C1.09 2.43 0 3.52 0 4.859v14.282C0 20.48 1.09 21.571 2.43 21.571h19.142c1.34 0 2.43-1.09 2.43-2.43V4.859c0-1.34-1.09-2.43-2.43-2.43zM18.887 13.422c-.23-.23-.623-.393-.895-.494a32.062 32.062 0 0 0-2.315-.658 2.502 2.502 0 0 0-2.45.698l-.497.493a14.243 14.243 0 0 1-4.733-4.733l.493-.497a2.502 2.502 0 0 0 .698-2.45 32.06 32.06 0 0 0-.658-2.316c-.101-.272-.264-.665-.494-.895-.36-.36-.962-.387-1.503-.306-1.127.169-2.336 1.09-2.617 2.25-.138.56-.251 1.764.12 3.522 1.045 4.954 4.542 8.451 9.496 9.496 1.758.371 2.962.258 3.522.12 1.16-.281 2.081-1.49 2.25-2.617.081-.541.054-1.143-.306-1.503z"/>
+  </svg>
+)
+
 export default function Home() {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
@@ -64,9 +82,9 @@ export default function Home() {
               +38 098 719 42 10
             </a>
             <div className="flex gap-2">
-              <a href="viber://chat?number=%2B380987194210" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Viber">V</a>
-              <a href="tg://resolve?domain=380987194210" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Telegram">T</a>
-              <a href="https://wa.me/380987194210" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="WhatsApp">W</a>
+              <a href="viber://chat?number=%2B380987194210" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="Viber"><ViberIcon className="w-4 h-4" /></a>
+              <a href="tg://resolve?domain=380987194210" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="Telegram"><TelegramIcon className="w-4 h-4" /></a>
+              <a href="https://wa.me/380987194210" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="WhatsApp"><WhatsAppIcon className="w-4 h-4" /></a>
             </div>
           </div>
           <div className="flex items-center justify-between">
@@ -75,9 +93,9 @@ export default function Home() {
               +38 098 719 42 45
             </a>
             <div className="flex gap-2">
-              <a href="viber://chat?number=%2B380987194245" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Viber">V</a>
-              <a href="tg://resolve?domain=380987194245" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Telegram">T</a>
-              <a href="https://wa.me/380987194245" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="WhatsApp">W</a>
+              <a href="viber://chat?number=%2B380987194245" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="Viber"><ViberIcon className="w-4 h-4" /></a>
+              <a href="tg://resolve?domain=380987194245" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="Telegram"><TelegramIcon className="w-4 h-4" /></a>
+              <a href="https://wa.me/380987194245" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center shadow-sm" title="WhatsApp"><WhatsAppIcon className="w-4 h-4" /></a>
             </div>
           </div>
         </div>
@@ -372,9 +390,33 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="text-center py-6 text-stone-400 text-xs">
+        <footer className="text-center py-8 text-stone-400 text-sm bg-stone-900 border-t border-stone-800">
+          <div className="flex flex-col gap-4 px-5 mb-6 text-stone-300">
+            <div className="flex items-center justify-between">
+              <a href="tel:+380987194210" className="font-bold hover:text-white transition flex items-center gap-2">
+                <Phone className="w-4 h-4 text-amber-500" />
+                +38 098 719 42 10
+              </a>
+              <div className="flex gap-2">
+                <a href="viber://chat?number=%2B380987194210" className="bg-[#7360f2] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="Viber"><ViberIcon className="w-5 h-5" /></a>
+                <a href="tg://resolve?domain=380987194210" className="bg-[#2AABEE] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-5 h-5" /></a>
+                <a href="https://wa.me/380987194210" className="bg-[#25D366] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="WhatsApp"><WhatsAppIcon className="w-5 h-5" /></a>
+              </div>
+            </div>
+            <div className="flex items-center justify-between">
+              <a href="tel:+380987194245" className="font-bold hover:text-white transition flex items-center gap-2">
+                <Phone className="w-4 h-4 text-amber-500" />
+                +38 098 719 42 45
+              </a>
+              <div className="flex gap-2">
+                <a href="viber://chat?number=%2B380987194245" className="bg-[#7360f2] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="Viber"><ViberIcon className="w-5 h-5" /></a>
+                <a href="tg://resolve?domain=380987194245" className="bg-[#2AABEE] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-5 h-5" /></a>
+                <a href="https://wa.me/380987194245" className="bg-[#25D366] text-white w-8 h-8 rounded-full flex items-center justify-center shadow-sm hover:scale-110 transition" title="WhatsApp"><WhatsAppIcon className="w-5 h-5" /></a>
+              </div>
+            </div>
+          </div>
           <p>NOME Slippers © 2026</p>
-          <p className="mt-1"><Link href="/privacy" className="underline hover:text-stone-600 transition">Політика конфіденційності</Link></p>
+          <p className="mt-2"><Link href="/privacy" className="underline hover:text-white transition">Політика конфіденційності</Link></p>
         </footer>
       </div>
     </main>
