@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Order {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  size      String
+  color     String
+  address   String
+  status    String   @default("Нове") // "Нове", "Обробляється", "Відправлено", "Виконано"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
