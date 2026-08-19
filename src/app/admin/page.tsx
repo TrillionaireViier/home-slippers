@@ -7,12 +7,13 @@ import { LogOut, Package, RefreshCw } from 'lucide-react'
 export default function AdminPage() {
   const [auth, setAuth] = useState(false)
   const [password, setPassword] = useState('')
-  const [orders, setOrders] = useState<any[]>([])
+  const [orders, setOrders] = useState<unknown[]>([])
   const [loading, setLoading] = useState(false)
 
   // Simple client-side auth for demonstration
   useEffect(() => {
     if (localStorage.getItem('nome_admin') === 'true') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAuth(true)
       fetchOrders()
     }
