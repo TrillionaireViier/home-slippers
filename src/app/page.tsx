@@ -58,13 +58,13 @@ export default function Home() {
         {/* HERO SECTION */}
         <header className="px-5 py-6">
           <h1 className="text-center font-black text-2xl mb-4 leading-tight">
-            НАЙТЕПЛІШІ КІМНАТНІ КАПЦІ ДЛЯ ВАШОГО ДОМУ
+            НАЙТЕПЛІШІ ДОМАШНІ УГИ ДЛЯ ВАШОГО ДОМУ
           </h1>
           
           <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6 aspect-square bg-stone-100">
             <img 
               src="/images/slipper-main.jpg" 
-              alt="Стильні домашні капці" 
+              alt="Стильні домашні уги" 
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.src = 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop'
@@ -121,7 +121,7 @@ export default function Home() {
               />
               <h3 className="font-bold text-xl mb-2">Надзвичайна теплота</h3>
               <p className="text-stone-600 leading-relaxed">
-                Наші капці виготовлені з високоякісних матеріалів, які чудово зберігають тепло. Ваші ноги завжди будуть у затишку, навіть у найхолодніші дні.
+                Наші уги виготовлені з високоякісних матеріалів, які чудово зберігають тепло. Ваші ноги завжди будуть у затишку, навіть у найхолодніші дні.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
-              <h3 className="font-bold text-xl mb-4 text-center">Чому обирають наші капці?</h3>
+              <h3 className="font-bold text-xl mb-4 text-center">Чому обирають наші уги?</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <div className="bg-green-100 p-1 rounded-full"><Check className="w-5 h-5 text-green-600" /></div>
@@ -190,7 +190,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-stone-600 italic">
-                "Дуже зручні капці! Замовила коричневі, розмір підійшов ідеально. Ноги завжди в теплі, а підошва справді не ковзає. Рекомендую!"
+                "Дуже зручні уги! Замовила коричневі, розмір підійшов ідеально. Ноги завжди в теплі, а підошва справді не ковзає. Рекомендую!"
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-stone-600 italic">
-                "Брав на подарунок дружині. Вона дуже задоволена, каже, що м'якших капців у неї ще не було. Дякую за швидку доставку!"
+                "Брав на подарунок дружині. Вона дуже задоволена, каже, що м'якших угів у неї ще не було. Дякую за швидку доставку!"
               </p>
             </div>
 
@@ -282,11 +282,11 @@ export default function Home() {
             <img 
               src="/images/slipper-main.jpg" 
               className="w-24 h-24 rounded-xl object-cover bg-stone-100" 
-              alt="Стильні домашні капці" 
+              alt="Стильні домашні уги" 
               onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop' }}
             />
             <div className="flex flex-col justify-center">
-              <p className="font-bold text-stone-800 leading-tight mb-1">Домашні капці NOME</p>
+              <p className="font-bold text-stone-800 leading-tight mb-1">Домашні уги NOME</p>
               <div className="flex items-center gap-2">
                 <span className="text-amber-600 font-black text-xl">850 ₴</span>
                 <span className="text-stone-400 line-through text-sm">1200 ₴</span>
