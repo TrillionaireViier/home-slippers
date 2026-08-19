@@ -82,8 +82,8 @@ export default function Home() {
               +38 098 719 42 10
             </a>
             <div className="flex gap-3">
-              <a href="viber://chat?number=%2B380987194210" className="text-[#7360f2] hover:scale-110 transition shadow-sm rounded-lg" title="Viber"><ViberIcon className="w-7 h-7" /></a>
-              <a href="tg://resolve?domain=380987194210" className="text-[#2AABEE] hover:scale-110 transition shadow-sm rounded-full" title="Telegram"><TelegramIcon className="w-7 h-7" /></a>
+              <a href="viber://chat?number=+380987194210" className="text-[#7360f2] hover:scale-110 transition shadow-sm rounded-lg" title="Viber"><ViberIcon className="w-7 h-7" /></a>
+              <a href="https://t.me/+380987194210" className="text-[#2AABEE] hover:scale-110 transition shadow-sm rounded-full" title="Telegram"><TelegramIcon className="w-7 h-7" /></a>
               <a href="https://wa.me/380987194210" className="text-[#25D366] hover:scale-110 transition shadow-sm rounded-full" title="WhatsApp"><WhatsAppIcon className="w-7 h-7" /></a>
             </div>
           </div>
@@ -93,8 +93,8 @@ export default function Home() {
               +38 098 719 42 45
             </a>
             <div className="flex gap-3">
-              <a href="viber://chat?number=%2B380987194245" className="text-[#7360f2] hover:scale-110 transition shadow-sm rounded-lg" title="Viber"><ViberIcon className="w-7 h-7" /></a>
-              <a href="tg://resolve?domain=380987194245" className="text-[#2AABEE] hover:scale-110 transition shadow-sm rounded-full" title="Telegram"><TelegramIcon className="w-7 h-7" /></a>
+              <a href="viber://chat?number=+380987194245" className="text-[#7360f2] hover:scale-110 transition shadow-sm rounded-lg" title="Viber"><ViberIcon className="w-7 h-7" /></a>
+              <a href="https://t.me/+380987194245" className="text-[#2AABEE] hover:scale-110 transition shadow-sm rounded-full" title="Telegram"><TelegramIcon className="w-7 h-7" /></a>
               <a href="https://wa.me/380987194245" className="text-[#25D366] hover:scale-110 transition shadow-sm rounded-full" title="WhatsApp"><WhatsAppIcon className="w-7 h-7" /></a>
             </div>
           </div>
@@ -398,8 +398,8 @@ export default function Home() {
                 +38 098 719 42 10
               </a>
               <div className="flex gap-3">
-                <a href="viber://chat?number=%2B380987194210" className="text-[#7360f2] hover:scale-110 transition" title="Viber"><ViberIcon className="w-8 h-8" /></a>
-                <a href="tg://resolve?domain=380987194210" className="text-[#2AABEE] hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-8 h-8" /></a>
+                <a href="viber://chat?number=+380987194210" className="text-[#7360f2] hover:scale-110 transition" title="Viber"><ViberIcon className="w-8 h-8" /></a>
+                <a href="https://t.me/+380987194210" className="text-[#2AABEE] hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-8 h-8" /></a>
                 <a href="https://wa.me/380987194210" className="text-[#25D366] hover:scale-110 transition" title="WhatsApp"><WhatsAppIcon className="w-8 h-8" /></a>
               </div>
             </div>
@@ -409,8 +409,8 @@ export default function Home() {
                 +38 098 719 42 45
               </a>
               <div className="flex gap-3">
-                <a href="viber://chat?number=%2B380987194245" className="text-[#7360f2] hover:scale-110 transition" title="Viber"><ViberIcon className="w-8 h-8" /></a>
-                <a href="tg://resolve?domain=380987194245" className="text-[#2AABEE] hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-8 h-8" /></a>
+                <a href="viber://chat?number=+380987194245" className="text-[#7360f2] hover:scale-110 transition" title="Viber"><ViberIcon className="w-8 h-8" /></a>
+                <a href="https://t.me/+380987194245" className="text-[#2AABEE] hover:scale-110 transition" title="Telegram"><TelegramIcon className="w-8 h-8" /></a>
                 <a href="https://wa.me/380987194245" className="text-[#25D366] hover:scale-110 transition" title="WhatsApp"><WhatsAppIcon className="w-8 h-8" /></a>
               </div>
             </div>
