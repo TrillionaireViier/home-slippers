@@ -66,9 +66,6 @@ export default function Home() {
               src="/images/slipper-5.jpg" 
               alt="Стильні домашні уги" 
               className="w-full h-full object-cover"
-              onError={(e) => {
-                e.currentTarget.src = 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop'
-              }}
             />
             {/* Sale badge */}
             <div className="absolute top-4 right-4 bg-red-600 text-white font-black px-4 py-2 rounded-xl text-xl rotate-12 shadow-lg">
@@ -117,7 +114,6 @@ export default function Home() {
                 src="/images/slipper-4.jpg" 
                 alt="Якісні матеріали" 
                 className="w-full rounded-2xl shadow-md mb-4 bg-stone-200 aspect-[4/3] object-cover"
-                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000&auto=format&fit=crop' }}
               />
               <h3 className="font-bold text-xl mb-2">Надзвичайна теплота</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -130,7 +126,6 @@ export default function Home() {
                 src="/images/slipper-6.jpg" 
                 alt="Зручна підошва" 
                 className="w-full rounded-2xl shadow-md mb-4 bg-stone-200 aspect-[4/3] object-cover"
-                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000&auto=format&fit=crop' }}
               />
               <h3 className="font-bold text-xl mb-2">Антиковзка підошва</h3>
               <p className="text-stone-600 leading-relaxed">
@@ -297,7 +292,6 @@ export default function Home() {
               src="/images/slipper-5.jpg" 
               className="w-24 h-24 rounded-xl object-cover bg-stone-100" 
               alt="Стильні домашні уги" 
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop' }}
             />
             <div className="flex flex-col justify-center">
               <p className="font-bold text-stone-800 leading-tight mb-1">Домашні уги NOME</p>
