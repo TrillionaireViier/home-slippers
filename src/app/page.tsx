@@ -166,6 +166,20 @@ export default function Home() {
           </div>
         </section>
 
+        {/* GALLERY SECTION */}
+        <section className="bg-white px-5 py-10">
+          <h2 className="text-center font-black text-2xl mb-8">
+            ГАЛЕРЕЯ
+          </h2>
+          <div className="grid grid-cols-2 gap-3">
+            <img src="/images/slipper-3.jpg" alt="Фото 1" className="w-full rounded-xl shadow-sm aspect-square object-cover bg-stone-100" />
+            <img src="/images/slipper-4.jpg" alt="Фото 2" className="w-full rounded-xl shadow-sm aspect-square object-cover bg-stone-100" />
+            <img src="/images/slipper-5.jpg" alt="Фото 3" className="w-full rounded-xl shadow-sm aspect-square object-cover bg-stone-100" />
+            <img src="/images/slipper-6.jpg" alt="Фото 4" className="w-full rounded-xl shadow-sm aspect-square object-cover bg-stone-100" />
+            <img src="/images/slipper-7.jpg" alt="Фото 5" className="w-full rounded-xl shadow-sm aspect-[2/1] object-cover bg-stone-100 col-span-2" />
+          </div>
+        </section>
+
         {/* REVIEWS SECTION */}
         <section className="px-5 py-10">
           <h2 className="text-center font-black text-2xl mb-2">
