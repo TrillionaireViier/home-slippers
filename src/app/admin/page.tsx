@@ -7,7 +7,7 @@ import { LogOut, Package, RefreshCw } from 'lucide-react'
 export default function AdminPage() {
   const [auth, setAuth] = useState(false)
   const [password, setPassword] = useState('')
-  const [orders, setOrders] = useState<unknown[]>([])
+  const [orders, setOrders] = useState<any[]>([])
   const [loading, setLoading] = useState(false)
 
   // Simple client-side auth for demonstration
