@@ -63,7 +63,7 @@ export default function Home() {
           
           <div className="relative rounded-2xl overflow-hidden shadow-lg mb-6 aspect-square bg-stone-100">
             <img 
-              src="/images/slipper-main.jpg" 
+              src="/images/slipper-5.jpg" 
               alt="Стильні домашні уги" 
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -114,7 +114,7 @@ export default function Home() {
           <div className="space-y-10">
             <div>
               <img 
-                src="/images/slipper-1.jpg" 
+                src="/images/slipper-4.jpg" 
                 alt="Якісні матеріали" 
                 className="w-full rounded-2xl shadow-md mb-4 bg-stone-200 aspect-[4/3] object-cover"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000&auto=format&fit=crop' }}
@@ -127,7 +127,7 @@ export default function Home() {
 
             <div>
               <img 
-                src="/images/slipper-2.jpg" 
+                src="/images/slipper-6.jpg" 
                 alt="Зручна підошва" 
                 className="w-full rounded-2xl shadow-md mb-4 bg-stone-200 aspect-[4/3] object-cover"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000&auto=format&fit=crop' }}
@@ -294,7 +294,7 @@ export default function Home() {
           {/* Miniature product summary */}
           <div className="bg-white rounded-2xl p-4 shadow-sm border border-stone-200 mb-6 flex gap-4">
             <img 
-              src="/images/slipper-main.jpg" 
+              src="/images/slipper-5.jpg" 
               className="w-24 h-24 rounded-xl object-cover bg-stone-100" 
               alt="Стильні домашні уги" 
               onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop' }}
