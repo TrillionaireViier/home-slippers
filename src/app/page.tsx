@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { createOrder } from './actions'
 import { ShoppingBag, Star, Check, Phone, Truck, ShieldCheck, ChevronLeft, ChevronRight } from 'lucide-react'
@@ -55,6 +56,32 @@ export default function Home() {
       {/* Mobile-centric wrapper */}
       <div className="max-w-[480px] mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden text-stone-900 pb-20">
         
+        {/* TOP CONTACT BAR */}
+        <div className="bg-stone-100 border-b border-stone-200 px-5 py-3 space-y-3">
+          <div className="flex items-center justify-between">
+            <a href="tel:+380987194210" className="font-bold text-lg hover:text-amber-600 transition flex items-center gap-2">
+              <Phone className="w-4 h-4 text-amber-500" />
+              +38 098 719 42 10
+            </a>
+            <div className="flex gap-2">
+              <a href="viber://chat?number=%2B380987194210" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Viber">V</a>
+              <a href="tg://resolve?domain=380987194210" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Telegram">T</a>
+              <a href="https://wa.me/380987194210" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="WhatsApp">W</a>
+            </div>
+          </div>
+          <div className="flex items-center justify-between">
+            <a href="tel:+380987194245" className="font-bold text-lg hover:text-amber-600 transition flex items-center gap-2">
+              <Phone className="w-4 h-4 text-amber-500" />
+              +38 098 719 42 45
+            </a>
+            <div className="flex gap-2">
+              <a href="viber://chat?number=%2B380987194245" className="bg-[#7360f2] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Viber">V</a>
+              <a href="tg://resolve?domain=380987194245" className="bg-[#2AABEE] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="Telegram">T</a>
+              <a href="https://wa.me/380987194245" className="bg-[#25D366] text-white w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs shadow-sm" title="WhatsApp">W</a>
+            </div>
+          </div>
+        </div>
+
         {/* HERO SECTION */}
         <header className="px-5 py-6">
           <h1 className="text-center font-black text-2xl mb-4 leading-tight">
@@ -347,7 +374,7 @@ export default function Home() {
         {/* FOOTER */}
         <footer className="text-center py-6 text-stone-400 text-xs">
           <p>NOME Slippers © 2026</p>
-          <p className="mt-1"><a href="#" className="underline">Політика конфіденційності</a></p>
+          <p className="mt-1"><Link href="/privacy" className="underline hover:text-stone-600 transition">Політика конфіденційності</Link></p>
         </footer>
       </div>
     </main>
